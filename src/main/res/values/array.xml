@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="myGrade">
+        <item>1학년</item>
+        <item>2학년</item>
+        <item>3학년</item>
+    </string-array>
+
+    <string-array name="myClass">
+        <item>1반</item>
+        <item>2반</item>
+        <item>3반</item>
+        <item>4반</item>
+        <item>5반</item>
+        <item>6반</item>
+        <item>7반</item>
+        <item>8반</item>
+        <item>9반</item>
+        <item>10반</item>
+    </string-array>
+
+    <string-array name="myType">
+        <item>과중</item>
+        <item>인문</item>
+    </string-array>
+
+    <string-array name="myWeek">
+        <item>월요일</item>
+        <item>화요일</item>
+        <item>수요일</item>
+        <item>목요일</item>
+        <item>금요일</item>
+    </string-array>
+
+    <string-array name="item_entries">
+        <item>자동</item>
+        <item>매주 토요일</item>
+        <item>매주 일요일</item>
+    </string-array>
+    <string-array name="item_entries_value">
+        <item>1</item>
+        <item>0</item>
+        <item>-1</item>
+    </string-array>
+
+    <string-array name="item_bap_type">
+        <item>점심</item>
+        <item>저녁</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,133 @@
+<resources>
+    <string name="app_name">반석 고등학교</string>
+
+    <string name="navigation_drawer_open">열기</string>
+    <string name="navigation_drawer_close">닫기</string>
+
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_activity_bap">식단</string>
+    <string name="message_activity_bap">점심, 저녁 식단 정보가 제공됩니다.</string>
+    <string name="today_lunch">오늘의 점심</string>
+    <string name="today_dinner">오늘의 저녁</string>
+    <string name="no_data_lunch">점심이 없습니다</string>
+    <string name="no_data_dinner">저녁이 없습니다</string>
+    <string name="no_data_title">정보 없음</string>
+    <string name="no_data_message">정보가 없습니다.</string>
+    <string name="no_network_title">인터넷 연결 안됨</string>
+    <string name="no_network_msg">인터넷 연결이 안돼서 데이터를 다운로드 할 수 없습니다</string>
+    <string name="no_wifi_title">데이터 네트워크 사용 안내</string>
+    <string name="no_wifi_msg">데이터 네트워크를 사용하시겠습니까?</string>
+    <string name="shareBap_title">급식 공유하기</string>
+    <string name="shareBap_message_msg">%1$s의 급식 목록
+\n\n점심 : %2$s
+\n\n저녁 : %3$s</string>
+    <string name="bapUpdateNotification_title">식단 업데이트중</string>
+    <string name="bapUpdateNotification_ticker">반석고등학교 식단 업데이트중</string>
+    <string name="bapUpdateNotification_notification">식단 업데이트 알림</string>
+    <string name="bapUpdateNotification_msg">식단을 업데이트 하고 있습니다 잠시만 기다려 주세요</string>
+    <string name="bapUpdate_Error_Net_title">네트워크 연결 안됨</string>
+    <string name="bapUpdate_Error_Net_msg">인터넷에 접속할수 없습니다</string>
+    <string name="bapUpdate_Error_get_title">식단 가져오기 실패</string>
+    <string name="bapUpdate_Error_get_msg">식단을 가져오는대 실패했습니다</string>
+    <string name="bapUpdate_Success_title">식단 업데이트 성공</string>
+    <string name="bapUpdate_Success_msg">식단을 성공적으로 업데이트 했습니다 확인하려면 누르세요</string>
+    <string name="bap_star_people_count">%1$d명 참여</string>
+    <string name="bap_star_once_title">별점 전송 제한</string>
+    <string name="bap_star_once_message">급식당 하루에 한번만 별점을 등록할 수 있습니다.</string>
+    <!-- 시간표 -->
+    <string name="title_activity_time_table">시간표 (2017년 1학기)</string>
+    <string name="message_activity_time_table">시간표를 확인합니다.</string>
+    <string name="today_timetable">%1$s 시간표</string>
+    <string name="no_setting_my_grade">학급 정보가 없습니다</string>
+    <string name="not_go_to_school_title">시간표 없음</string>
+    <string name="not_go_to_school_message">오늘은 시간표가 없습니다.</string>
+    <string name="not_exists_data">데이터가 없습니다.</string>
+    <string name="timetable_title">%1$d학년 %2$d반 시간표</string>
+    <string name="no_time_table_db_title">시간표 DB 없음</string>
+    <string name="no_time_table_db_message">시간표 DB가 없습니다, 다운로드 하시겠습니까?</string>
+    <string name="post_bap_star_title">급식 별점 전송</string>
+    <string name="post_bap_star_posting">급식 별점 전송중</string>
+    <string name="post_bap_star_success">급식 별점 전송을 성공했습니다!
+\n반영까지 약 5분정도 소요될 수 있습니다.</string>
+    <string name="post_bap_star_failed">급식 별점 전송에 실패했습니다!</string>
+    <string name="loading_title">로딩중</string>
+    <!-- 메뉴 -->
+    <string name="action_settings">설정</string>
+    <string name="action_refresh">새로 고침</string>
+    <string name="action_calender">날짜 설정</string>
+    <string name="action_today">오늘 날짜</string>
+    <string name="action_show_star">별점 확인</string>
+    <string name="action_reset_mygrade">학급 정보 재설정</string>
+    <string name="action_share_timetable">시간표 공유</string>
+    <string name="action_setting_mygrade">학년 설정</string>
+    <string name="action_setting_myclass">반 설정</string>
+    <string name="action_share_timetable_msg">%1$s 시간표</string>
+    <string name="I_do_not_know_the_error_title">알수없는 오류 발생</string>
+    <string name="I_do_not_know_the_error_message">오류가 발생하였습니다..</string>
+    <string name="loading">로딩중..&#8230;</string>
+    <string name="title">제목</string>
+    <string name="writer">글쓴이</string>
+    <string name="date">날짜</string>
+    <string name="desc">내용</string>
+    <string name="linkLabel">웹링크 </string>
+    <string name="linkText">링크</string>
+    <string name="opensource2">링크</string>
+    <!-- 급식 위젯 -->
+    <string name="widget_bap_name">급식 위젯 블랙</string>
+    <string name="widget_timetable_name">시간표 위젯 블랙</string>
+    <string name="widget_timetable_name2">시간표 위젯 화이트 </string>
+    <string name="widget_bap_name2">급식 위젯 화이트</string>
+    <string name="widget_no_data">데이터가 없습니다 여기를 터치하여 업데이트 한 후 새로고침을 눌러주세요.</string>
+    <!-- 학교정보 -->
+    <string name="location">찾아가는길</string>
+    <string name="call_info">[전화번호를 터치하면 전화앱에서 전화번호가 입력됩니다.]</string>
+    <string name="school_office">042-824-3022(본부교무실)</string>
+    <string name="administration_department">042-824-3028(행정실)</string>
+    <string name="fax">FAX : 042-824-3023(본부교무실), 042-824-3029(행정실)</string>
+    <string name="adress">대전광역시 유성구 지족로 332  \n [Google 지도에서 보려면 터치]</string>
+    <string name="adress2">지족역에서 하차  \n [네이버 지도에서 보려면 터치]</string>
+    <string name="transportations">가는길</string>
+    <string name="schetitile">2017년 학사일정</string>
+    <!-- 설정 -->
+    <!-- 급식 자동 업데이트 안내 -->
+    <string name="info_autoUpdate_title">급식 자동 업데이트 안내</string>
+    <string name="info_autoUpdate_msg">
+\n- 업데이트 주기 : 자동, 토요일, 일요일을 선택할 수 있습니다 선택한 날짜의 AM 1:00에 업데이트가 이루어집니다
+\n- 업데이트 알림 : 급식 업데이트 중에는 설정과 관계없이 진행중 알림이 나타나며 업데이트 완료후 성공/실패여부를 알림으로 나타내줍니다
+\n- Wi-Fi로만 업데이트 : Wi-Fi에서만 업데이트 합니다 </string>
+    <!-- 급식 자동 업데이트 알림 -->
+    <!-- 오픈소스 라이센스 -->
+    <string name="license_title">라이센스 정보</string>
+    <string name="license_msg">오픈소스 라이센스 정보
+\n- Jericho HTML Parser
+\n (http://jericho.htmlparser.net/docs/index.html)
+\n
+\n- Android Meal Library
+\n (https://bitbucket.org/whdghks913/wondanghighschool)
+\n
+\n- Android Support Library
+\n com.android.support:appcompat-v7:23.1.1
+\n com.android.support:design:23.1.1
+\n com.android.support:cardview-v7:23.1.1
+\n com.android.support:recyclerview-v7:23.1.1
+\n com.android.support:support-v4:23.1.1
+\n
+\n- DateTimePicker
+\n com.github.flavienlaurent.datetimepicker:library:0.0.2
+\n (https://github.com/flavienlaurent/datetimepicker)
+\n
+\n- Glide
+\n com.github.bumptech.glide:glide:3.6.1
+\n
+\n- CircleImageView
+\n de.hdodenhof:circleimageview:2.0.0
+\n
+\n- org.apache.http
+\n org.jbundle.util.osgi.wrapped:org.jbundle.util.osgi.wrapped.org.apache.http.client:4.1.2
+\n
+    </string>
+    <!-- 수정 내역 -->
+    <string name="changeLog_title">수정 내역</string>
+    <string name="changeLog_msg">v2.1 리디자인 \nv2.2 알레르기 정보 레이아웃 수정 \nv2.4 공지사항 가정통신문 대회정보 네트워크 비연결시 하나만 불러오던 오류 수정\nv2.6 급식 파싱 안되던 문제해결</string>
+
+</resources>

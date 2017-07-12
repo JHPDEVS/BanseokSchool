@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f1f1f1"
+    style="@style/Widget.CardContent"
+    android:orientation="vertical">
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view55"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:background="@color/bapbackground"
+        android:orientation="vertical"
+        android:divider="@drawable/dividr"
+        android:paddingBottom="5sp"
+        android:paddingTop="5sp">
+
+        <TextView
+            android:id="@+id/mCalender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="2000년 00월 00일"
+            android:textColor="@color/darker_blue"
+            android:textSize="25sp" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#f1f1f1"
+            android:paddingBottom="5sp"
+            android:paddingTop="5sp">
+        <TextView
+            android:id="@+id/mDayOfTheWeek"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="월요일"
+            android:textColor="@color/darker_blue"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="25sp" />
+            </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/my_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                android:divider="@drawable/dividr"
+                android:showDividers="middle"
+                >
+                <android.support.v7.widget.CardView
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/card_view13"
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    >
+                    <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:orientation="horizontal"
+                        android:background="@color/lunch">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="점심"
+                            android:textColor="@color/white"
+                            style="@style/Widget.CardContent"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+                        <android.support.v7.widget.CardView
+                            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                            android:id="@+id/card_view14"
+                            android:layout_gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10sp"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true">
+                            <TextView
+                                android:id="@+id/mLunch"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center_vertical"
+                                android:textAppearance="?android:attr/textAppearanceListItem"
+                                android:textColor="@android:color/black"
+                                style="@style/Widget.CardContent"
+                                android:textSize="18sp" />
+                        </android.support.v7.widget.CardView>
+                    </TableRow>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/card_view15"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+
+                    >
+                    <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@color/diner"
+                        android:orientation="horizontal" >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="저녁"
+                            android:textColor="@color/white"
+                            style="@style/Widget.CardContent"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+                        <android.support.v7.widget.CardView
+                            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                            android:id="@+id/card_view16"
+                            android:layout_gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10sp"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true">
+                            <TextView
+                                android:id="@+id/mDinner"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                style="@style/Widget.CardContent"
+                                android:textColor="@android:color/black"
+                                android:textAppearance="?android:attr/textAppearanceListItem"
+                                android:layout_gravity="fill_vertical"
+                                android:textSize="18sp" />
+                        </android.support.v7.widget.CardView>
+                    </TableRow>
+                </android.support.v7.widget.CardView>
+
+                <LinearLayout
+                    android:id="@+id/starLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:visibility="visible">
+
+                    <Button
+                        android:id="@+id/giveStar"
+                        style="?android:attr/buttonBarButtonStyle"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:background="@color/diner"
+                        android:focusable="false"
+                        android:text="별점 주기"
+                        android:textAllCaps="true"
+                        android:textColor="#ffffff" />
+
+                    <Button
+                        android:id="@+id/showStar"
+                        style="?android:attr/buttonStyleSmall"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:background="@color/diner"
+                        android:focusable="false"
+                        android:text="별점 확인"
+                        android:textAllCaps="true"
+                        android:textColor="#ffffff" />
+
+                </LinearLayout>
+                <!-- TODO 그래프 또는 칼로리 -->
+            </TableLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

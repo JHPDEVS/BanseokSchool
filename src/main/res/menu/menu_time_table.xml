@@ -1,0 +1,20 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_share_timetable"
+        android:icon="@drawable/ic_share"
+        android:orderInCategory="1"
+        android:title="@string/action_share_timetable"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_download_db"
+        android:icon="@drawable/ic_update"
+        android:orderInCategory="2"
+        android:title="DB 다운로드"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_reset_mygrade"
+        android:orderInCategory="3"
+        android:title="@string/action_reset_mygrade"
+        app:showAsAction="never" />
+</menu>

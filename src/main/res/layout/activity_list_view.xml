@@ -1,0 +1,39 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.jhp.banseok.calender.ListViewActivity" >
+
+
+
+    <LinearLayout
+        android:id="@+id/LinearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#DFDFDF"
+        android:gravity="right"
+        android:orientation="vertical"
+        android:padding="15dp" >
+
+        <Button
+            android:id="@+id/btn_calender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#77C265"
+            android:padding="10dp"
+            android:text="Calendar"
+            android:textColor="#ffffff"
+            android:textSize="22dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lv_android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </ListView>
+
+</LinearLayout>

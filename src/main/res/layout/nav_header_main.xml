@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="190dp"
+android:background="@drawable/pic0"
+android:orientation="vertical"
+    >
+
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="대전반석고등학교"
+    android:textSize="14sp"
+    android:textColor="#FFF"
+    android:textStyle="bold"
+    android:layout_marginLeft="8dp"
+    android:gravity="left"
+    android:paddingBottom="4dp"
+    android:id="@+id/school"
+    android:layout_above="@+id/juso"
+   />
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="대전광역시 유성구 지족로 332"
+    android:id="@+id/juso"
+    android:gravity="left"
+    android:layout_marginBottom="8dp"
+    android:textSize="14sp"
+    android:textColor="#fff"
+    android:layout_alignParentBottom="true"
+    android:layout_alignLeft="@+id/school"
+    android:layout_alignStart="@+id/school" />
+
+</RelativeLayout>
+

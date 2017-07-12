@@ -1,0 +1,89 @@
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="105dp"
+    android:onClick="win"
+    android:orientation="vertical"
+    card_view:cardCornerRadius="0dp"
+    card_view:cardElevation="4dp"
+    card_view:cardUseCompatPadding="true"
+    >
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:background="?android:attr/selectableItemBackground"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+
+        android:weightSum="1"
+        >
+        <RelativeLayout android:orientation="vertical"
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+
+
+            android:weightSum="1"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <RelativeLayout
+                android:layout_marginLeft="16dp"
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/frameLayout"
+                android:layout_toEndOf="@+id/frameLayout">
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="match_parent"
+                    android:gravity="center_vertical"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:maxLines="1"
+                    android:text="대회정보"
+                    android:textColor="#000"
+                    android:layout_alignParentTop="true"
+                    />
+                <TextView
+                    android:text="대회정보를 확인할 수 있습니다"
+                    android:id="@+id/description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:maxLines="20"
+                    android:layout_marginTop="3dp"
+                    android:textColor="#676767"
+                    android:layout_below="@+id/title"
+                    >
+                </TextView>
+            </RelativeLayout>
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="16dp"
+
+                android:id="@+id/frameLayout"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+
+                <ImageView
+
+                    android:src="@drawable/win"
+                    android:layout_gravity="center"
+                    android:id="@+id/imageView"
+                    android:layout_width="42dp"
+                    android:layout_height="42dp"
+                    />
+            </FrameLayout>
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
+

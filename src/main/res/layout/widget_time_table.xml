@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/dayweek"
+    android:padding="@dimen/widget_margin">
+
+    <LinearLayout
+        android:id="@+id/mUpdateLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical"
+        android:paddingBottom="5sp"
+        android:paddingTop="5sp">
+
+        <TextView
+            android:id="@+id/mCalender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="2000년 00월 00일"
+            android:textColor="@android:color/white"
+            android:textSize="15dp" />
+        <Button
+            android:id="@+id/updater"
+            android:text="새로고침"
+            android:textColor="#ffffff"
+            android:textSize="15dp"
+            android:background="@color/day"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/mWidgetLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/mTimeTable"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/widget_no_data"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@android:color/white"
+            android:textSize="15dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

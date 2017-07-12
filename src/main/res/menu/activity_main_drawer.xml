@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_camera"
+            android:title="홈" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:title="공지사항" />
+        <item
+            android:id="@+id/nav_homed"
+            android:title="가정통신문" />
+        <item
+            android:id="@+id/nav_win"
+            android:title="대회정보" />
+        <item
+            android:id="@+id/nav_bap"
+            android:title="급식" />
+        <item
+            android:id="@+id/nav_sche"
+            android:title="학사일정" />
+        <item
+            android:id="@+id/nav_time"
+            android:title="시간표" />
+        <item
+            android:id="@+id/nav_manage"
+            android:title="오픈소스 라이센스" />
+    </group>
+
+    <item android:title="소통">
+        <menu>
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="건의사항 보내기" />
+        </menu>
+    </item>
+
+</menu>

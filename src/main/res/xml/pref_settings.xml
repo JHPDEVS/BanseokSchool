@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="간단 목록 보기">
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="simpleShowBap"
+            android:summary="간단 목록 보기의 급식을 활성화 합니다."
+            android:title="급식 간단 보기 활성화" />
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="simpleShowTimeTable"
+            android:summary="간단 목록 보기의 시간표를 활성화 합니다."
+            android:title="시간표 간단 보기 활성화" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="급식 업데이트">
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="autoBapUpdate"
+            android:summary="급식을 자동으로 업데이트 합니다"
+            android:title="급식 자동 업데이트" />
+        <ListPreference
+            android:defaultValue="0"
+            android:dependency="autoBapUpdate"
+            android:entries="@array/item_entries"
+            android:entryValues="@array/item_entries_value"
+            android:key="updateLife"
+            android:title="업데이트 주기" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:dependency="autoBapUpdate"
+            android:key="updateNotifi"
+            android:summary="급식 업데이트후 상단바에 알림을 띄웁니다"
+            android:title="업데이트 알림" />
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:dependency="autoBapUpdate"
+            android:key="updateWiFi"
+            android:summary="업데이트시 Wi-Fi가 아니라면 2시간뒤 다시 시도합니다"
+            android:title="Wi-Fi로만 업데이트" />
+        <Preference
+            android:dependency="autoBapUpdate"
+            android:key="infoAutoUpdate"
+            android:summary="토,일 업데이트시 전원이 꺼져있으면 자동 업데이트가 이루어 지지 않을수 있습니다\n업데이트는 AM 1:00에 이루어 집니다"
+            android:title="업데이트 안내" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="어플 정보">
+        <Preference
+            android:key="openSource"
+            android:summary="오픈소스 라이센스를 확인합니다"
+            android:title="오픈소스 라이센스" />
+        <!--<Preference
+            android:key="appInfo"
+            android:summary="개발자 정보를 확인합니다"
+            android:title="개발자 정보">
+            <intent
+                android:targetClass="wondang.icehs.kr.whdghks913.wondanghighschool.MadeBy"
+                android:targetPackage="wondang.icehs.kr.whdghks913.wondanghighschool" />
+        </Preference> -->
+        <Preference
+            android:summary="앱 개발자에게 메일을 보냅니다"
+            android:title="개발자에게 메일 보내기">
+            <intent
+                android:action="android.intent.action.SENDTO"
+                android:data="mailto:jhpdevs@gmail.com" />
+        </Preference>
+        <Preference
+            android:key="ChangeLog"
+            android:summary="수정 내역을 확인합니다"
+            android:title="수정 내역" />
+        <Preference
+            android:key="appVersion"
+            android:summary="v0.0"
+            android:title="어플 버전" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

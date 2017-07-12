@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.jhp.banseok"
+    android:versionCode="7"
+    android:versionName="1.6" >
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="23" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.jhp.banseok.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.jhp.banseok.win"
+            android:label="대회정보"
+            android:theme="@style/CustomActionBarTheme" />
+        <activity
+            android:name="com.jhp.banseok.homed"
+            android:label="가정통신문"
+            android:theme="@style/CustomActionBarTheme" />
+        <activity
+            android:name="com.jhp.banseok.bap.star.BapStarActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.jhp.banseok.bap.BapActivity"
+            android:label="급식"
+            android:theme="@style/AppTheme"/>
+        <activity
+        android:name="com.jhp.banseok.SplashActivity"
+        android:label="공지사항 "
+        android:theme="@style/CustomActionBarTheme" />
+        <activity
+            android:name="com.jhp.banseok.ListActivity"
+            android:label="반석 고등학교"
+            android:theme="@style/CustomActionBarTheme" />
+        <activity
+            android:name="com.jhp.banseok.DetailActivity"
+            android:label="반석 고등학교"
+            android:theme="@style/CustomActionBarTheme" />
+        <activity
+            android:name="com.jhp.banseok.time.activity"
+            android:label="시간표"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.jhp.banseok.schedule.ScheduleActivity"
+            android:label="학사일정"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.jhp.banseok.calender.Expand"
+            android:label="학사일정"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.jhp.banseok.settings.SettingsActivity"
+            android:label="설정"
+            android:theme="@style/AppTheme.NoActionBar"
+       />
+        <activity
+            android:name="com.jhp.banseok.schoolinfopage"
+            android:label="학교정보"
+            android:theme="@style/MyMaterialTheme" />
+        <activity android:name=".calender.ListViewActivity"
+            android:label="@string/app_name"
+            android:theme="@style/CustomActionBarTheme"></activity>
+        <activity android:name=".calender.CalenderActivity"
+            android:label="@string/app_name"
+            android:theme="@style/CustomActionBarTheme"></activity>
+        <activity android:name="com.google.android.gm" />
+
+        <receiver
+            android:name="com.jhp.banseok.widget.BapWidget"
+            android:label="@string/widget_bap_name" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/bap_widget_info" />
+        </receiver>
+        <receiver
+            android:name="com.jhp.banseok.widget.BapWidget2"
+            android:label="@string/widget_bap_name2" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/bap2" />
+        </receiver>
+        <receiver
+            android:name="com.jhp.banseok.widget.TimeTableWidget"
+            android:label="@string/widget_timetable_name" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/time_table_widget_info" />
+        </receiver>
+        <receiver
+            android:name="com.jhp.banseok.widget.table2"
+            android:label="@string/widget_timetable_name2" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/time_table_widget_info2" />
+        </receiver>
+        <receiver
+            android:name="com.jhp.banseok.widget.WidgetBroadCast"
+            android:enabled="true"
+            android:permission="android.permission.RECEIVE_BOOT_COMPLETED" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.DATE_CHANGED" />
+                <action android:name="android.intent.action.TIME_CHANGED" />
+            </intent-filter>
+        </receiver>
+        <!--
+             ATTENTION: This was auto-generated to add Google Play services to your project for
+             App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
+        -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+    </application>
+
+</manifest>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#f37321</color>
+    <color name="colorPrimaryDark">#f4721f</color>
+    <color name="bap">#2579d8</color>
+    <color name="bapbackground">#fafafa</color>
+    <color name="bapred">#f6726d</color>
+    <color name="notice">#8bc34a</color>
+    <color name="day">#32525e</color>
+    <color name="dayweek">#3e5f6b</color>
+    <color name="lunch">#4CAF50</color>
+    <color name="diner">#ff3f9de6</color>
+    <color name="colorAccent">#5a80ff</color>
+    <color name="colorDivider">#B6B6B6</color>
+    <color name="background_color_black">#bb000000</color>
+    <color name="outside_color_trans">#00000000</color>
+    <color name="colorWhite">#FF4081</color>
+    <color name="selector_poppyview_pressed">#9933cc</color>
+    <color name="selector_poppyview_default">#aa66cc</color>
+    <color name="background">#ffe3e3e3</color>
+    <color name="textColorPrimary">#FFFFFF</color>
+    <color name="windowBackground">#FFFFFF</color>
+    <color name="navigationBarColor">#000000</color>
+    <color name="colorPrimaryText">#212121</color>
+    <color name="app_blue">#045CB1</color>
+    <color name="colorSecondaryText">#727272</color>
+</resources>
